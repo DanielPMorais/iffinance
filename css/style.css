@@ -1,0 +1,74 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    /* Fontes do cloudflare: */
+    font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; 
+}
+
+body{
+    background: #202020;
+}
+
+header{
+    height: 90px;
+    background: #000;
+}
+
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+#logo{
+    width: 150px;
+    display: flex;
+    gap: 10px;
+}
+
+#logo h1{
+    margin: 0;
+    color: #ffffff;
+}
+
+#logo img{
+    width: 40px;
+    height: 40px;
+}
+
+
+#logo h1 span{
+    color: #df7d50;
+}
+
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+header nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 30px 20px;
+}
+
+header nav ul li a:hover{
+    color: #b1acac;
+    border-bottom: 5px solid #df7d507e;
+}
+
+
+.active{
+    border-bottom: 5px solid #df7d50;
+}
