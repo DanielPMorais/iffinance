@@ -63,6 +63,12 @@ header nav ul li a{
     padding: 30px 20px;
 }
 
+header a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
 header nav ul li a:hover{
     color: #b1acac;
     border-bottom: 5px solid #df7d507e;
