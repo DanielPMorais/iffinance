@@ -121,6 +121,10 @@ fieldset{
     border-radius: 10px;
 }
 
+fieldset legend{
+    font-weight: bold;
+}
+
 fieldset:first-child{
     display: flex;
     flex-direction: column;
