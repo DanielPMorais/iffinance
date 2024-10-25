@@ -15,7 +15,7 @@
             idade: 23,
         }
 
-        console.log(`Olá ${user.idAdmins[2]}, Seja bem vindo!`)
+        console.log(`Olá ${user.nome}, Seja bem vindo!`)
     </script>
 </head>
 <body>
@@ -41,7 +41,42 @@
     <main>
         <div class="wrapper">
             <h1>Home</h1>
+            <input id="txtInput" type="text"></input>
+            <button onclick="pegarTexto()">Pegar texto</button>
+            <button onclick="colorirDiv()">Mudar a cor</button>
+            <div id="resultado"></div>
+            <div id="colorir" style="background-color: #fff; height: 400px; width: 400px;">
+        </div>
+
         </div>
     </main>
 </body>
+<script>
+    
+    let corAtual = 'preto'
+    const mudar = () =>{
+        const logo = document.getElementById('logo')
+
+        if(corAtual == 'preto'){
+            logo.style.background = "#FFF"
+            corAtual = 'branco'
+        } else{
+            logo.style.background = "#000"
+            corAtual = 'preto'
+        }
+        console.log("Clicando...")
+    }
+    const pegarTexto = () =>{
+        const txtInput = document.getElementById('txtInput')
+        const resultado = document.getElementById('resultado')
+
+        resultado.innerHTML = `<p>${txtInput.value}</p>`
+    }
+    const colorirDiv = () =>{
+        const txtInput = document.getElementById('txtInput')
+        const colorir = document.getElementById('colorir')
+
+        colorir.style.background = txtInput.value
+    }
+</script>
 </html>
