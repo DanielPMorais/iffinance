@@ -209,8 +209,33 @@ input[type=submit]:hover, button:hover{
     background: #000;
 }
 
-.card{
-    width: 700px;
-    height: 500px;
-    background: white;
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: #e2dfdf;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 0;
+    /* display: none; */
+}
+
+.card header {
+    height: 50px;
+    background: none;
+    color: #000;
+}
+.card footer {
+    color: #000;
+}
+
+.price {
+    color: #2b2b2b;
+}
+
+.flex-ar{
+    display: flex;
+    justify-content: space-around;
 }
