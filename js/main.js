@@ -33,8 +33,8 @@ function handleSubmitAddTicker(event){
                         <h4>${nameCompanny}</h4>
                         <span>${ticker}</span>
                     </header>
-                    <main class="flex-bt" style="align-self: flex-start;">
-                        <p>Valor: <span style="color: #3fca08; font-size: 30px;">R$${closedValue}<span style="font-size: 15px;">▲ ▼</span></span></p>
+                    <main class="flex-bt">
+                        <p>Valor: <span style="color: #3fca08; font-size: 30px;">R$${closedValue}<span style="font-size: 15px;"> ▲</span></span></p>
                     </main>
                     <footer class="flex-bt">
                         <p>Quantidade: <span>${quantity}</span></p>
